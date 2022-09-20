@@ -90,6 +90,7 @@ async function startUp(ns) {
 	installCountdown = daemonStartTime = lastScriptsCheck = reservedPurchase = 0;
 	lastStatusLog = "";
 	installedAugmentations = killScripts = [];
+  ranCasino = true;
 
 	// Collect and cache some one-time data
 	const player = await getNsDataThroughFile(ns, 'ns.getPlayer()', '/Temp/getPlayer.txt');
